@@ -6,4 +6,12 @@
     <string name="login">Login</string>
     <string name="you_are_on_the_second_page">You are on the second page</string>
     <string name="login_attempts">Login Attempts:</string>
+    <string name="title_activity_shop_list">ShopList</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_sort">Sort List</string>
+    <string name="action_add">Add Item</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_cloud">Send to Cloud</string>
+
+
 </resources>

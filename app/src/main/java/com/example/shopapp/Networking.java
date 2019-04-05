@@ -23,13 +23,14 @@ public class Networking extends AsyncTask<Void,Void,Void> {
     StringBuffer stringBuffer = new StringBuffer("");
     String firstname;
     String lastname;
+//    String uname;
+//    String pword;
+//    String id;
 
     @Override
     protected Void doInBackground(Void... voids) {
 
         L("doInBackground");
-
-
 
         try {
             URL url = new URL("https://api.myjson.com/bins/1fz6be");
@@ -40,7 +41,7 @@ public class Networking extends AsyncTask<Void,Void,Void> {
 
             String line = "";
             String LineSeparator = System.getProperty("line.separator");
-            while(line != null) {
+            while (line != null) {
                 line = bufferedReader.readLine();
                 stringBuffer.append(line + LineSeparator);
             }
@@ -48,8 +49,8 @@ public class Networking extends AsyncTask<Void,Void,Void> {
 
             JSONObject jo = new JSONObject(String.valueOf(this.stringBuffer));
 
-            firstname     = jo.getString("firstname");
-            lastname      = jo.getString("lastname");
+            firstname = jo.getString("firstname");
+            lastname = jo.getString("lastname");
 
             L("Decoded Json to name: " + firstname);
             L("Decoded Json to lastname: " + lastname);
@@ -66,7 +67,6 @@ public class Networking extends AsyncTask<Void,Void,Void> {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
         return null;
     }
 
