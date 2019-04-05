@@ -2,7 +2,6 @@ package com.denisegoetz;
 
 
 public class LoginBefore  {
-	
 
 	public User startLogin(String userName, String userPass) {
 

@@ -1,6 +1,5 @@
 package com.denisegoetz;
 
-
 import java.util.HashMap;
 
 public class AppControl {
