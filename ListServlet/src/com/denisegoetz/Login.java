@@ -62,7 +62,6 @@ public class Login implements Handler {
 	
 	LoginDAO getDAO = new LoginDAO();
     return getDAO.getUserLogin(userName, userPass);
-  
 	
 	}
   

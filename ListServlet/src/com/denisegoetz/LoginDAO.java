@@ -11,7 +11,6 @@ import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
 
-
 public class LoginDAO {
 
 	public User getUserLogin(String userName, String userPass) {
